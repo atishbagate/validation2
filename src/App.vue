@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-md ml-2 navbar-dark fixed-top bg-dark">
+  <nav class="navbar navbar-expand-md  navbar-dark fixed-top bg-dark">
     <router-link class="navbar-brand " to="/Home">Car Collections</router-link>
 
     <button
@@ -19,9 +19,14 @@
         <li class="nav-item active">
           <router-link class="nav-link" to="/Home">Home</router-link>
         </li>
-        <li class="nav-item ">
+        <!-- <li class="nav-item ">
           <router-link class="nav-link" to="/Registration"
             >Registration</router-link
+          >
+        </li> -->
+        <li class="nav-item ">
+          <router-link class="nav-link" to="/Signup"
+            >Signup</router-link
           >
         </li>
         <li class="nav-item ">

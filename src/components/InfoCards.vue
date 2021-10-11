@@ -1,5 +1,6 @@
 <template>
-    <div class="custom_card d-md-flex justify-content-around">
+    <!-- <div class="custom_card d-md-flex justify-content-around"> -->
+    <div class="card-deck">
         <div class="card shadow bg-white rounded" style=" width:20rem;">
                 <img class="  img-fluid rounded d-block  float-right" src="https://media.wired.com/photos/5d09594a62bcb0c9752779d9/125:94/w_1994,h_1500,c_limit/Transpo_G70_TA-518126.jpg" 
                    alt="Card image cap" >

@@ -2,139 +2,49 @@
   <div class="bg">
     <div class=" mt-5" style="margin:0px 15px; height:92.7vh; opacity: .8;">
       <div class="d-flex">
-        <div
-          class="card"
-          style="width: 60rem; margin-top:2rem; border: 2px solid #669ccb;; padding:5px; border-radius: 10px;"
-        >
+        <div class="card" style="width: 60rem; margin-top:2rem; border: 2px solid #669ccb;; padding:5px; border-radius: 10px;">
           <div class="card-body">
-            <h5
-              class="card-title"
-              style="text-align: center; font-size: xx-large; background: #AA7867;"
-            >
-              Registration Forms
-            </h5>
+            <h5 class="card-title" style="text-align: center; font-size: xx-large; background: #AA7867;"> Registration Forms</h5>
             <div class="row mt-md-5 mt-sm-3">
               <div class="form-group col-md-6 col-sm-12">
                 <label for="exampleInputEmail1">First Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="fname"
-                  aria-describedby="fname"
-                  v-model="state.name.fname"
-                  placeholder="Enter first name"
-                />
-                <span
-                  class="text-center font-weight-bold text-danger"
-                  v-if="v$.name.fname.$error"
-                  >{{ v$.name.fname.$errors[0].$message }}</span
-                >
+                <input type="text" class="form-control" id="fname" aria-describedby="fname" v-model="state.name.fname" placeholder="Enter first name" />
+                <span class="text-center font-weight-bold text-danger" v-if="v$.name.fname.$error" >{{ v$.name.fname.$errors[0].$message }} </span>
               </div>
               <div class="form-group col-md-6 col-sm-12">
                 <label for="exampleInputEmail1">Last Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="lname"
-                  aria-describedby="lname"
-                  v-model="state.name.lname"
-                  placeholder="Enter Last name"
-                />
-                <span
-                  class="text-center font-weight-bold text-danger"
-                  v-if="v$.name.lname.$error"
-                  >{{ v$.name.lname.$errors[0].$message }}</span
-                >
+                <input type="text" class="form-control" id="lname" aria-describedby="lname" v-model="state.name.lname" placeholder="Enter Last name" />
+                <span class="text-center font-weight-bold text-danger" v-if="v$.name.lname.$error" >{{ v$.name.lname.$errors[0].$message }}</span>
               </div>
             </div>
             <div class="row mt-md-3 mt-sm-3">
               <div class="form-group col-md-6 col-sm-12">
                 <label for="exampleInputEmail1">Mobile Number</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="number"
-                  aria-describedby="number"
-                  v-model="state.number"
-                  placeholder="Enter mobile name"
-                />
-                <span
-                  class="text-center font-weight-bold text-danger"
-                  v-if="v$.number.$error"
-                  >{{ v$.number.$errors[0].$message }}</span
-                >
+                <input type="text" class="form-control" id="number" aria-describedby="number" v-model="state.number" placeholder="Enter mobile name"/>
+                <span class="text-center font-weight-bold text-danger" v-if="v$.number.$error" >{{ v$.number.$errors[0].$message }}</span>
               </div>
               <div class="form-group col-md-6 col-sm-12">
-                <label for="exampleInputEmail1">Email address</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  v-model="state.email"
-                  placeholder="Enter email"
-                />
-                <span
-                  class="text-center font-weight-bold text-danger"
-                  v-if="v$.email.$error"
-                  >{{ v$.email.$errors[0].$message }}</span
-                >
+                <label for="exampleInputEmail1">Email addr>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" v-model="state.email" placeholder="Enter email"/>
+                <span class="text-center font-weight-bold text-danger" v-if="v$.email.$error" >{{ v$.email.$errors[0].$message }}</span >
               </div>
             </div>
             <div class="row mt-md-3 mt-sm-3">
               <div class="form-group col-md-6 col-sm-12">
                 <label for="exampleInputPassword1">Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="Password"
-                  v-model="state.password.password"
-                />
-                <span
-                  class="text-center font-weight-bold text-danger"
-                  v-if="v$.password.password.$error"
-                  >{{ v$.password.password.$errors[0].$message }}</span
-                >
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" v-model="state.password.password"/>
+                <span class="text-center font-weight-bold text-danger" v-if="v$.password.password.$error">{{ v$.password.password.$errors[0].$message }}</span>
               </div>
               <div class="form-group col-md-6 col-sm-12">
-                <label for="exampleInputPasswordconfirm"
-                  >Re-enter Password</label
-                >
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPasswordconfirm"
-                  placeholder="Password"
-                  v-model="state.password.confirm"
-                />
-                <span
-                  class="text-center font-weight-bold text-danger"
-                  v-if="v$.password.confirm.$error"
-                  >{{ v$.password.confirm.$errors[0].$message }}</span
-                >
+                <label for="exampleInputPasswordconfirm">Re-enter Password</label>
+                <input type="password" class="form-control" id="exampleInputPasswordconfirm" placeholder="Password" v-model="state.password.confirm"/>
+                <span class="text-center font-weight-bold text-danger" v-if="v$.password.confirm.$error" >{{ v$.password.confirm.$errors[0].$message }}</span>
               </div>
             </div>
             <div class="form-group col-md-6 col-sm-12 mt-3">
-              <button
-                @click="submitForm"
-                class="btn btn-primary"
-                style="width:30%; margin-right:5px;"
-              >
-                Submit
-              </button>
-              <button
-                @click="submitForm"
-                class="btn btn-secondary"
-                style="width:20%; margin-right:5px;"
-              >
-                cancel
-              </button>
-              <router-link
-                class="nav-link btn btn-link text-danger  "
-                to="/Home"
-                style="width:20%; color:red;"
-                >Home</router-link
+              <button click="submitForm" class="btn btn-primary" style="width:30%; margin-right:5px;">Submit</button>
+                <button @click="submitForm" class="btn btn-secondary" style="width:20%; margin-right:5px;">cancel</button>
+              <router-link class="nav-link btn btn-link text-danger  " to="/Home" style="width:20%; color:red;" >Home</router-link
               >
             </div>
           </div>
