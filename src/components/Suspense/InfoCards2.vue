@@ -1,5 +1,4 @@
 <template>
- 
     <div class="card-deck ml-5 mr-5">
       <div class="custom_card d-md-flex justify-content-around"></div>
     <div class="card shadow bg-white rounded" style=" width:10rem;" v-for="item in list" v-bind:key="item.title">
@@ -13,18 +12,28 @@
       </div>
     </div>
   </div>
-  
+
 </template>
 <script>
-import axios from "axios";
+import axios from "axios"; 
 export default {
   name: "InfoCards2",
+  
   data() {
     return {
       list: [],
     };
   },
+  // async setup(){
+  //   const info = ref(null);
+  //   const response =  axios.get("https://api.jsonbin.io/b/616401c4aa02be1d4457b7e1/3")
+  //   info.value = response.data;
 
+  //   return{
+  //     info,
+  //   }
+
+  // },
   mounted() {
     axios
       .get("https://api.jsonbin.io/b/616401c4aa02be1d4457b7e1/3")
@@ -33,6 +42,7 @@ export default {
         console.log(response.data);
       });
   },
+  
 };
 </script>
 <style scoped>
