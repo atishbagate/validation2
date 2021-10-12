@@ -1,5 +1,6 @@
 <template>
-    <div class="card-deck ">
+ 
+    <div class="card-deck ml-5 mr-5">
       <div class="custom_card d-md-flex justify-content-around"></div>
     <div class="card shadow bg-white rounded" style=" width:10rem;" v-for="item in list" v-bind:key="item.title">
         <img class="img-fluid rounded d-block  float-right" :src="item.img" alt="Card image cap"/>
@@ -12,6 +13,7 @@
       </div>
     </div>
   </div>
+  
 </template>
 <script>
 import axios from "axios";

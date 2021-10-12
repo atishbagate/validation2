@@ -1,10 +1,11 @@
 <template>
   <div class="card mt-5 HomePage">
-    <Carasaules />
+
+    <InfoCards2 />
     <hr />
     <InfoCards />
     <hr />
-    <InfoCards2 />
+    <Carasaules />
     <hr />
     <Section1 />
     <hr />

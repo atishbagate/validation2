@@ -1,10 +1,10 @@
 <template>
     <div class="card mt-5" >
         <!-- The video -->
-<video autoplay muted loop id="myVideo">
+<!-- <video autoplay muted loop id="myVideo">
   <source src="https://vod-progressive.akamaized.net/exp=1633778331~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2116%2F18%2F460584788%2F2037654810.mp4~hmac=c0fe26522fe4418be5123832190857ff98a93c49346d5b10f18146180c376891/vimeo-prod-skyfire-std-us/01/2116/18/460584788/2037654810.mp4" type="video/mp4">
-</video>
-
+</video> -->
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2Fyc3xlbnwwfHwwfHw%3D&w=1000&q=80" alt="imgs">
 <!-- Optional: some overlay text to describe the video -->
 <div class="content">
   <h1>About Us:</h1>
