@@ -2,29 +2,29 @@
 <div v-if="errMsg" class="text-center text-bold font-weight-bold text-muted">{{errMsg}}</div>
       <Suspense v-else> 
     <template #default>
-            <InfoCards2Suspense />
+            <Card9InfoCards2Suspense />
     </template>
     <template #fallback>
-            <InfoCardSuspensionSkeleton />
+            <Card9InfoCardSuspensionSkeleton />
     </template>
   </Suspense>
 </template>
 <script>
 import { onErrorCaptured } from 'vue-demi'
 import { ref } from 'vue'
-import InfoCards2Suspense from "./MainSuspense/InfoCards2Suspense.vue"
-import InfoCardSuspensionSkeleton from "./MainSuspense/InfoCardSuspensionSkeleton.vue"
+import Card9InfoCards2Suspense from './Card9MainSuspense/MainSuspense/Card9InfoCards2Suspense.vue'
+import Card9InfoCardSuspensionSkeleton from './Card9MainSuspense/MainSuspense/Card9InfoCardSuspensionSkeleton.vue'
 export default{
-    name:"RootSuspense",
+    name:"Card9RootSuspense",
     components:{
-        InfoCards2Suspense,
-        InfoCardSuspensionSkeleton
+        Card9InfoCards2Suspense,
+        Card9InfoCardSuspensionSkeleton
     },
 
     setup(){
       const errMsg = ref("");
       onErrorCaptured((err)=>{
-        errMsg.value = `"cannot load the cards" ${err}`
+        errMsg.value = `"cannot load the cardss" ${err}`
       })
       return{errMsg}
     }

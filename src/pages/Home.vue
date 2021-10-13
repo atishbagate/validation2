@@ -10,11 +10,13 @@
     </template>
   </Suspense>
     <hr />
+      <Card9RootSuspense/>
+    <hr />
       <RootSuspense/>
     <hr />
     <InfoCards />
     <hr />
-    <InfoCards2 />
+    <!-- <InfoCards2 /> -->
     <hr />
     <Carasaules />
     <hr />
@@ -29,9 +31,9 @@
     <Footer />
   </div>
 </template>
-<script>
+<script> 
 import InfoCards from "../components/InfoCards.vue";
-import InfoCards2 from "../components/InfoCards2.vue";
+// import InfoCards2 from "../components/InfoCards2.vue";
 import Section1 from "../components/Section1.vue";
 import Section2 from "../components/Section2.vue";
 import Section3 from "../components/Section3.vue";
@@ -43,11 +45,13 @@ import Suspensemain from "../components/Suspense/example/Suspensemain.vue"
 import Suspensemainskelaton from "../components/Suspense/example/Suspensemainskelaton.vue" 
 // loader on cards 
 import RootSuspense from "../components/Suspense/RootSuspense.vue"
+//9 card loader
+import Card9RootSuspense from "../components/Suspense/Card9RootSuspense.vue"
 export default {
   name: "Home",
   components: {
     InfoCards,
-    InfoCards2,
+    // InfoCards2,
     Section1,
     Section2,
     Section3,
@@ -57,9 +61,11 @@ export default {
 
     Suspensemain,
     Suspensemainskelaton, 
-    RootSuspense
+    RootSuspense,
+    Card9RootSuspense
   },
 };
+  
 </script>
 <style scoped>
 hr {

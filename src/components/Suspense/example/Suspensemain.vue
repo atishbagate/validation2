@@ -9,6 +9,7 @@
 </template>
 <script> 
     import { ref } from "vue";
+
     const loadData = async () => {
         return new Promise((resolve)=>{
             setTimeout(()=>{
@@ -23,7 +24,7 @@ export default{
     name:"Suspense",
     async setup(){
         const userData = ref(await loadData())
-        return {userData}
+        return {userData};
    }
 
 }
@@ -33,6 +34,8 @@ export default{
     width: 100%;
     max-width: 700px;
     min-height: 200px;
+    /* width: 700px;
+    height: 200px; */
     background: white;
     margin: 0 auto; 
     padding: 30px;

@@ -20,7 +20,7 @@ const loadData = async() =>{
   return new Promise((resolve)=>{
     setTimeout(() => {
           resolve(
-      axios.get("https://api.jsonbin.io/b/616401c4aa02be1d4457b7e1/4")
+      axios.get("https://api.jsonbin.io/b/616401c4aa02be1d4457b7e 1/4")
       .then((resolve) => {
         console.log(resolve.data);
         // alert(JSON.stringify(resolve.data))
