@@ -1,5 +1,5 @@
 <template>
-  <div class="card-deck ml-5 mr-5"> 
+  <!-- <div class="card-deck ml-5 mr-5"> 
     <div class="card custom_card shadow rounded" >
       <div class="card-body">
         <div class="custom_card_img" />
@@ -30,18 +30,28 @@
         <div class="btn custom_btn"/>
     </div>
   </div>
- 
-    <!-- <div class="card shadow rounded" style=" width:10rem;">
-        <img class="img-fluid rounded d-block  float-right" />
-  </div>
-    <div class="card shadow rounded" style=" width:10rem;">
-        <img class="img-fluid rounded d-block  float-right" />
-  </div> -->
+    </div> -->
+    <div class="container">
+      <div class="row ">
+          <div class="col-sm-12 col-sm-6 col-lg-4" v-for="n in 9" :key="n">
+                <div class="card custom_card shadow rounded m-2">
+                      <div class="card-body">
+                        <div class="custom_card_img" />
+                        <div class="card-title"/>
+                        <div class="card-text"/> 
+                        <p class="updated"/>
+                        <div class="btn custom_btn"/>
+                        <div class="btn custom_btn"/>
+                      </div>
+                </div>
+          </div>
+    </div>
     </div>
 </template>
 <script>
 export default {
   name: "InfoCardSuspensionSkeleton",
+   
 }
 </script>
 <style scoped>

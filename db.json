@@ -1,11 +1,34 @@
-// json-server --watch db.json
 {
     "events":[
-        {"id":1},
-        {"id":2},
-        {"id":3},
-        {"id":4},
-        {"id":5},
-        {"id":6}
+          {
+            "title": "Decalogue, The (Dekalog)",
+            "info": "tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque",
+            "img": "https://cdn.motor1.com/images/mgl/2PgYn/s3/ferrari-laferrari.jpg"
+          },
+          {
+            "title": "Never Again",
+            "info": "lectus aliquam sit amet diam in magna bibendum imperdiet nullam",
+            "img": "https://i.pinimg.com/originals/26/f6/c8/26f6c82178cdaacf100fb20358124318.jpg"
+          },
+          {
+            "title": "Demonlover",
+            "info": "integer pede justo lacinia eget tincidunt eget tempus vel pede",
+            "img": "https://cdn.motor1.com/images/mgl/2PgYn/s3/ferrari-laferrari.jpg"
+          },
+          {
+            "title": "Never Again",
+            "info": "lectus aliquam sit amet diam in magna bibendum imperdiet nullam",
+            "img": "https://i.pinimg.com/originals/26/f6/c8/26f6c82178cdaacf100fb20358124318.jpg"
+          },
+          {
+            "title": "Demonlover",
+            "info": "integer pede justo lacinia eget tincidunt eget tempus vel pede",
+            "img": "https://cdn.motor1.com/images/mgl/2PgYn/s3/ferrari-laferrari.jpg"
+          },
+          {
+            "title": "Demonlover",
+            "info": "integer pede justo lacinia eget tincidunt eget tempus vel pede",
+            "img": "https://cdn.motor1.com/images/mgl/2PgYn/s3/ferrari-laferrari.jpg"
+          }
     ]
 }

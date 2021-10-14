@@ -1,14 +1,7 @@
 <template>
   <div class="card mt-5 HomePage">
-   <hr />
-   <Suspense>
-    <template #default>
-      <Suspensemain />
-    </template>
-    <template #fallback>
-      <Suspensemainskelaton/>   
-    </template>
-  </Suspense>
+    <hr />
+     <Carasaules />
     <hr />
       <Card9RootSuspense/>
     <hr />
@@ -17,9 +10,6 @@
     <InfoCards />
     <hr />
     <!-- <InfoCards2 /> -->
-    <hr />
-    <Carasaules />
-    <hr />
     <Section1 />
     <hr />
     <Section2 />
@@ -27,6 +17,15 @@
     <Section3 />
     <hr />
     <Section4 />
+    <hr />
+    <Suspense>
+      <template #default>
+        <Suspensemain />
+      </template>
+      <template #fallback>
+          <Suspensemainskelaton/>   
+      </template>
+    </Suspense>
     <hr />
     <Footer />
   </div>
