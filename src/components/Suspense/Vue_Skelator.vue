@@ -2,23 +2,23 @@
 <div v-if="errMsg" class="text-center text-bold font-weight-bold text-muted">{{errMsg}}</div>
   <Suspense v-else> 
     <template #default>
-            <Card9InfoCards2Suspense />
+            <!-- <Ueskelator /> -->
     </template>
     <template #fallback>
-            <Card9InfoCardSuspensionSkeleton />
+            <UeSkeletorSkelaton />
     </template>
   </Suspense>
 </template>
 <script>
 import { onErrorCaptured } from 'vue-demi'
 import { ref } from 'vue'
-import Card9InfoCards2Suspense from './Card9MainSuspense/Card9InfoCards2Suspense.vue'
-import Card9InfoCardSuspensionSkeleton from './Card9MainSuspense/Card9InfoCardSuspensionSkeleton.vue'
+// import Ueskelator from './Vue_skeletor/Vue_skelator.vue'
+import UeSkeletorSkelaton from './Vue_skeletor/Vue_Skeletor_Skelaton.vue'
 export default{
-    name:"Card9RootSuspense",
+    name:"ueSkelator",
     components:{
-        Card9InfoCards2Suspense,
-        Card9InfoCardSuspensionSkeleton
+        // Ueskelator,
+        UeSkeletorSkelaton
     },
     setup(){
       const errMsg = ref("");

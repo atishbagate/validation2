@@ -22,7 +22,7 @@ const loadData = async() =>{
           resolve(
       axios.get("https://api.jsonbin.io/b/616401c4aa02be1d4457b7e1/4")
       .then((resolve) => {
-        console.log(resolve.data);
+        // console.log(resolve.data);
         // alert(JSON.stringify(resolve.data))
         return resolve.data;
       })
@@ -34,7 +34,7 @@ export default {
   name: "Card9InfoCards2Suspense",
   async setup(){
     const userInfo = ref(await loadData())
-    console.log(userInfo);
+    // console.log(userInfo);
     return{userInfo}
   },
   

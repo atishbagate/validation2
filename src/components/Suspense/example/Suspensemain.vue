@@ -5,7 +5,6 @@
          <p class="profile-info">info: {{userData.info}}</p>
      </div>
  </div>
- 
 </template>
 <script> 
     import { ref } from "vue";

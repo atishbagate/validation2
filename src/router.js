@@ -3,10 +3,10 @@ import {createWebHistory,createRouter} from 'vue-router'
 import Home from './pages/Home.vue';
 // import Registration from './pages/Registration.vue';
 import AboutUs from './pages/AboutUs.vue';
-import Signup from './pages/signup.vue';
-
+import Signup from './pages/Signup.vue';
+import ProfilePage from './pages/ProfilePage.vue';
+import Parent from './components/Parent.vue'
 const routes = [
- 
     {
         name:'Home',
         path:'/Home',
@@ -27,6 +27,16 @@ const routes = [
         path:'/Signup',
         component:Signup
     },
+    {
+        name:'ProfilePage',
+        path:'/ProfilePage',
+        component:ProfilePage
+    },
+    {
+        name:'ParentChild',
+        path:'/ParentChild',
+        component:Parent
+    }
     
 ];
 // 3. Create the router instance and pass the `routes` option

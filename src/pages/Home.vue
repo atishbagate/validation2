@@ -1,9 +1,8 @@
 <template>
   <div class="card mt-5 HomePage">
+      <Carasaules />
     <hr />
-     <Carasaules />
-    <hr />
-      <Card9RootSuspense/>
+      <Card9RootSuspense />
     <hr />
       <RootSuspense/>
     <hr />
@@ -46,6 +45,9 @@ import Suspensemainskelaton from "../components/Suspense/example/Suspensemainske
 import RootSuspense from "../components/Suspense/RootSuspense.vue"
 //9 card loader
 import Card9RootSuspense from "../components/Suspense/Card9RootSuspense.vue"
+//Vue Skelator Plugin 
+// import Ueskelator from "../components/Suspense/Vue_skeletor/Vue_skelator.vue"
+
 export default {
   name: "Home",
   components: {
@@ -61,7 +63,8 @@ export default {
     Suspensemain,
     Suspensemainskelaton, 
     RootSuspense,
-    Card9RootSuspense
+    Card9RootSuspense,
+    // Ueskelator
   },
 };
   

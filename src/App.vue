@@ -2,15 +2,7 @@
   <nav class="navbar navbar-expand-md  navbar-dark fixed-top bg-dark">
     <router-link class="navbar-brand " to="/Home">Car Collections</router-link>
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -21,16 +13,19 @@
         </li>
         <!-- <li class="nav-item ">
           <router-link class="nav-link" to="/Registration"
-            >Registration</router-link
-          >
+            >Registration</router-link>
         </li> -->
         <li class="nav-item ">
-          <router-link class="nav-link" to="/Signup"
-            >Signup</router-link
-          >
+          <router-link class="nav-link" to="/Signup">Signup</router-link>
         </li>
         <li class="nav-item ">
           <router-link class="nav-link" to="/AboutUs">About Us</router-link>
+        </li>
+        <li class="nav-item ">
+          <router-link class="nav-link" to="/ProfilePage">Profile Page</router-link>
+        </li>
+        <li class="nav-item ">
+          <router-link class="nav-link" to="/ParentChild">Parent Child props exchange</router-link>
         </li>
       </ul>
     </div>
@@ -42,4 +37,6 @@ export default {
   name: "App",
 };
 </script>
-<style scoped></style>
+<style scoped>
+
+</style>
